@@ -7,6 +7,7 @@ class GetDetails extends Component {
         super();
         this.state={
             medicalid:'',
+            medShow:'',
             name:'',
             dob:'',
             gender:'',
@@ -50,7 +51,7 @@ class GetDetails extends Component {
                 else
                 {
                     this.setState({
-                        fetched: true, wrongid: false, medicalid: res.data[0].medicalid, name: res.data[0].name, dob: res.data[0].dob, gender: res.data[0].gender, ailments: res.data[0].ailments, medicines: res.data[0].medicines })
+                        fetched: true, wrongid: false, medicalid: res.data[0].medicalid, medShow: res.data[0].medicalid, name: res.data[0].name, dob: res.data[0].dob, gender: res.data[0].gender, ailments: res.data[0].ailments, medicines: res.data[0].medicines })
                     console.log(res.data[0])
 
                 }
@@ -101,12 +102,12 @@ class GetDetails extends Component {
                         <div className="card" style={{ marginLeft: '5vw', width: '38rem', height: 'fitContent', backgroundColor: '#98FB98', borderRadius: '4px', display: 'inline-block', position:'absolute', top:'15vw', right:'16vw', float:'right' }}>
                                     <div className="card-body">
                                         <h5 className="card-title">PATIENTS DETAILS</h5>                                
-                                        <h6 className="card-subtitle mb-2 text-muted">Global mdeical records available for Medical Card Number {this.state.medicalid}</h6>
+                                        <h6 className="card-subtitle mb-2 text-muted">Global mdeical records available for Medical Card Number {this.state.medShow}</h6>
                                         <br/>
 
                                 <div style={{textAlign:"left", marginLeft:30}}>
                                 
-                                Medical ID: {this.state.medicalid}
+                                Medical ID: {this.state.medShow}
                                 <br />
                                 Name: {this.state.name}
                                 <br />
