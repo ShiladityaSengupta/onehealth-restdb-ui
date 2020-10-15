@@ -101,8 +101,8 @@ class GetDetails extends Component {
                          {this.state.fetched ?  
                         <div className="card" style={{ marginLeft: '5vw', width: '38rem', height: 'fitContent', backgroundColor: '#98FB98', borderRadius: '4px', display: 'inline-block', position:'absolute', top:'15vw', right:'16vw', float:'right' }}>
                                     <div className="card-body">
-                                        <h5 className="card-title">PATIENTS DETAILS</h5>                                
-                                        <h6 className="card-subtitle mb-2 text-muted">Global mdeical records available for Medical Card Number {this.state.medShow}</h6>
+                                        <h5 className="card-title">PATIENT DETAILS</h5>                                
+                                        <h6 className="card-subtitle mb-2 text-muted">Global medical records available for Medical Card Number {this.state.medShow}</h6>
                                         <br/>
 
                                 <div style={{textAlign:"left", marginLeft:30}}>
