@@ -66,7 +66,7 @@ class GetDetails extends Component {
 
                 <a href="/">
                     <header style={{ backgroundColor: 'yellow', height: '6vw', position: "absolute", top: '0', width: '100vw' }}>
-                        <h1 style={{ fontSize: '2vw', fontFamily: 'Georgia', color: "black", marginTop: '1.5vw' }}>
+                        <h1 style={{ fontSize: '2vw', color: "black", marginTop: '1.5vw' }}>
                             One Health
                     </h1>
                     </header>
